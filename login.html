@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Signup</title>
+    <link rel="stylesheet" href="animation.css/login.css">
+</head>
+<body>
+<div class="container">
+    <div class="box"></div>
+    <div class="container-forms">
+      <div class="container-info">
+        <div class="info-item">
+          <div class="table">
+            <div class="table-cell">
+              <p>
+                Profiliniz var?
+              </p>
+              <div class="btn">
+                Daxil ol
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="table">
+            <div class="table-cell">
+              <p>
+                Profiliniz yoxdur? 
+              </p>
+              <div class="btn">
+                Qeydiyyat
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-form">
+        <div class="form-item log-in">
+          <div class="table">
+            <div class="table-cell">
+              <input name="Username" placeholder="İstifadəçi adı" type="text" />
+              <input name="Password" placeholder="Şifrə" type="Password" />
+              <div class="btn">
+                Daxil ol
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-item sign-up">
+          <div class="table">
+            <div class="table-cell">
+              <input name="email" placeholder="E-poçt" type="text" />
+              <input name="fullname" placeholder="Ad Soyad" type="text" />
+              <input name="Username" placeholder="İstifadəçi adı" type="text" />
+              <input name="Password" placeholder="Şifrə" type="Password" />
+              <div class="btn">
+                Qeydiyyat
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+</body>
+</html>
+
+
+
+<script>
+    $(".info-item .btn").click(function(){
+    $(".container").toggleClass("log-in");
+  });
+  $(".container-form .btn").click(function(){
+    $(".container").addClass("active");
+  });
+</script>
